@@ -1,0 +1,22 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Notification {
+  id: Int!
+  title: String!
+  message: String!
+}
+
+type Query {
+  notifications: [Notification!]!
+}
+
+type Mutation {
+  createNotification(input: CreateNotificationInput!): Notification!
+}
+
+input CreateNotificationInput {
+  title: String!
+  message: String!
+}
